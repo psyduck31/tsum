@@ -31,7 +31,7 @@ class Bot:
 					if size['availabilityInStock'] == True:
 						sizes.append(size['id'])
 				if len(sizes) > 0:
-					self.addToCart(10863982)
+					self.addToCart(random.choice(sizes))
 			else:
 				print(response.status_code)
 				return None
